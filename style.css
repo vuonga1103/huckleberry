@@ -8,6 +8,7 @@
   --gray-medium: hsl(0deg, 0%, 40%);
   --gray-light: hsl(0deg, 0%, 60%);
   --white: hsl(0deg, 0%, 100%);
+  --grey-border: 8px solid var(--gray-medium);
 }
 
 * {
@@ -36,7 +37,7 @@ strong {
 .max-width-wrapper {
   max-width: 600px;
   margin: auto;
-  padding: 24px;
+  /* padding: 24px; */
   background-color: var(--white);
 }
 
@@ -50,7 +51,7 @@ main {
 }
 
 main {
-  border-top: 8px solid var(--gray-medium);
+  border-top: var(--grey-border);
   background-color: var(--gray-light);
 }
 
@@ -65,10 +66,13 @@ main {
 
 .card {
   background-color: var(--white);
+  margin: -24px;
+  padding: 24px;
+  border-bottom: var(--grey-border);
 }
 
 .card h2 {
-  margin: -16px 0 0 -48px;
+  margin: -16px 0 0 -40px;
   padding: 16px 48px;
   font-size: 1.25rem;
   width: fit-content;
