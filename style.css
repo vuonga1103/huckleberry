@@ -37,7 +37,6 @@ strong {
 .max-width-wrapper {
   max-width: 600px;
   margin: auto;
-  /* padding: 24px; */
   background-color: var(--white);
 }
 
